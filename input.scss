@@ -1,0 +1,121 @@
+$gray-background: #f8f9fa;
+$gray-accent: #6c757d;
+$green-discount: #28a745;
+
+*{
+    font-family: helvetica, arial, san-serif;
+    color: $gray-accent;
+}
+
+.summary{
+    background: $gray-background;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 20em;
+    padding: 1em 1em;
+}
+    
+.summary__title__section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20em;
+}
+
+.summary__items{
+    background-color: $gray-accent;
+    padding: 4px;
+    color: white;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+}
+
+
+.summary__products{
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    width: 20em;
+
+}
+
+.summary__product__item{
+    display: grid;
+    grid-template-columns: 1fr 2em;
+    padding: 0 1em;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+.summary__product__item:last-child{
+    border-bottom: none;
+}
+
+.product__title{
+    color: black;
+    font-weight: 600;
+    padding-bottom: 0;
+}
+
+.product__description{
+    
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+.product__price{
+    font-weight: 600;
+    text-align: right;
+}
+
+.summary--promo{
+    background-color: $gray-background;
+    color: $green-discount;
+    .product__title{
+        color: $green-discount;
+    }
+    .product__description{
+        color:$green-discount;
+    }
+    .product__price{
+        color:$green-discount;
+    }
+}
+
+.summary__promo{
+    margin-top: 20px;
+    padding: 1em;
+    border: 1px solid #e0e0e0 ;
+    border-radius: 5px;
+}
+
+.summary__promo{
+    display: flex;
+    background: white;
+    justify-content: center;
+    width: 18em;
+    padding: 1em;
+}
+
+.btn{
+    background-color: $gray-accent;
+    color: white;
+    border: none;
+    padding: .8em 1.5em;
+    border-radius: 0 5px 5px 0;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.placeholder{
+    font-weight: 600;
+    font-size: 15px;
+    padding: 1em;
+    width: 11em;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #e0e0e0 ;
+}
